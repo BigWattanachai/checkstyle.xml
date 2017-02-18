@@ -1,4 +1,13 @@
 <FindBugsFilter>
+<Match>
+        <Class name="~.*\.*Test.*"/>
+        <Not>
+            <Bug code="IJU"/>
+        </Not>
+    </Match>
+      <Match>
+        <Package name="com.ascend.campaign.entities.*"/>
+    </Match>
     <Match>
         <Class name="com.ascend.campaign.entities.BaseAuditEntity"/>
         <Bug pattern="EI_EXPOSE_REP, EI_EXPOSE_REP2"/>
